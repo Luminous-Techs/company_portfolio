@@ -76,59 +76,6 @@
 
 
 
-    <!-- Begin - PROJECT SECTION -->
-    
-    <section id="project" class="project">
-        <div class="project-flex">
-            <div class="project-flex-item">
-                <img src="assets/images/web.gif" alt="web" class="project-img">
-                <div class="project-content">
-                    <span class="project-span">Project Completed </span>
-                    <span class="counter project-span" data-target="15"> </span>
-                    <span class="project-plus"><i class="fas fa-plus"></i></span>
-                </div>
-            </div>
-            <div class="project-flex-item">
-                <img src="assets/images/code.jpg" alt="code" class="project-img">
-                <div class="project-content">
-                    <span class="project-span">Lines of Code</span>
-                    <span class="counter project-span" data-target="250"></span>
-                    <span class="project-plus"><i class="fas fa-plus"></i></span>
-                </div>
-            </div>
-            <div class="project-flex-item">
-                <img src="assets/images/avatars.gif" alt="avtar" class="project-img">
-                <div class="project-content">
-                    <span class="project-span">Team Member</span>
-                    <span class="counter project-span" data-target="5"></span>
-                    <span class="project-plus"><i class="fas fa-plus"></i></span>
-                </div>
-            </div>
-            <script>
-                const counters = document.querySelectorAll('.counter');
-                counters.forEach((counter) => {
-                    counter.innerHTML = 0;
-                    const updatecounter = () => {
-                        const targetCount = +counter.getAttribute('data-target')
-                        const startingvalue = Number(counter.innerHTML);
-                        const incrValue = targetCount / 10;
-                        if (startingvalue < targetCount) {
-                            counter.innerHTML = `${Math.round(startingvalue + incrValue)}`;
-                            setTimeout(updatecounter, 130);
-                        } else {
-                            counter.innerHTML = targetCount
-                        }
-                    }
-                    updatecounter();
-                });
-            </script>
-        </div>
-    </section>
-
-    <!-- End - PROJECT SECTION -->
-
-
-    
     <!-- Begin - SERVICE SECTION -->
 
     <section id="service"  class="service">
@@ -196,52 +143,108 @@
 
 
 
-    <!-- Contact Us Section -->
+    <!-- Begin - PROJECT SECTION -->
+    
+    <section id="project" class="project">
+        <div class="project-flex">
+            <div class="project-flex-item">
+                <img src="assets/images/web.gif" alt="web" class="project-img">
+                <div class="project-content">
+                    <span class="project-span">Project Completed </span>
+                    <span class="counter project-span" data-target="15"> </span>
+                    <span class="project-plus"><i class="fas fa-plus"></i></span>
+                </div>
+            </div>
+            <div class="project-flex-item">
+                <img src="assets/images/code.jpg" alt="code" class="project-img">
+                <div class="project-content">
+                    <span class="project-span">Lines of Code</span>
+                    <span class="counter project-span" data-target="250"></span>
+                    <span class="project-plus"><i class="fas fa-plus"></i></span>
+                </div>
+            </div>
+            <div class="project-flex-item">
+                <img src="assets/images/avatars.gif" alt="avtar" class="project-img">
+                <div class="project-content">
+                    <span class="project-span">Team Member</span>
+                    <span class="counter project-span" data-target="5"></span>
+                    <span class="project-plus"><i class="fas fa-plus"></i></span>
+                </div>
+            </div>
+            <script>
+                const counters = document.querySelectorAll('.counter');
+                counters.forEach((counter) => {
+                    counter.innerHTML = 0;
+                    const updatecounter = () => {
+                        const targetCount = +counter.getAttribute('data-target')
+                        const startingvalue = Number(counter.innerHTML);
+                        const incrValue = targetCount / 10;
+                        if (startingvalue < targetCount) {
+                            counter.innerHTML = `${Math.round(startingvalue + incrValue)}`;
+                            setTimeout(updatecounter, 130);
+                        } else {
+                            counter.innerHTML = targetCount
+                        }
+                    }
+                    updatecounter();
+                });
+            </script>
+        </div>
+    </section>
 
-    <!-- <div class="contact">
-        <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="-300 0 950 270">
-            <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="white" stroke-width="120"
-                stroke-linecap="round" />
-        </svg>
-        <div class="container-contact d-flex justify-content-center">
-            <h2 style="text-align: center; font-size:50px;" class="form-title">Contact Us</h2>
-            <p style="text-align: center; font-size:30px;" class="justify text-muted">Get some questions?? We have
-                got answers</p>
-            <div class="row-form my-2 mx-2">
-                <div class="col-md-6">
-                    <img style="margin-bottom: 20px;" src="assets/images/contact3.jpeg" alt="IMG" height="300"
-                        width="400"><br>
-                    <div class="row-local">
-                        <img src="assets/images/contact2.jpeg" alt="contact" height="50px" width="50px">
-                        <h4 style="margin-left: 20px;">123456789</h4>
-                    </div>
-                    <br>
-                    <div class="row-local-one">
-                        <img src="assets/images/contact1.jpeg" alt="contact" height="50px" width="50px">
-                        <h4 style="margin-left: 20px;">luminous.techs@gmail.com</h4>
+    <!-- End - PROJECT SECTION -->
+
+
+    
+    <!-- Begin - CONTACT SECTION -->
+
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="contact-heading">Get in Touch</h2>
+                <p class="contact-sub-heading">Get some questions?? We have got answers</p>
+            </div>
+            <div class="contact-flex">
+                <div class="contact-flex-item contact-left">
+                    <img src="assets/images/contact3.jpeg" alt="img" class="contact-img">
+                    <div class="contact-detail-holder">
+                        <div class="contact-call">
+                            <img src="assets/images/contact2.jpeg" alt="contact" class="contact-icon">
+                            <a href="tel:+91" class="contact-href">+91 12345 67890</a>
+                        </div>
+                        <div class="contact-mail">
+                            <img src="assets/images/contact1.jpeg" alt="contact" class="contact-icon">
+                            <a href="mailto: contact@ourluminous.tech" class="contact-href">contact@ourluminous.tech</a>
+                        </div>
                     </div>
                 </div>
-
-                <div style="background-color: #38B6FF; width: 400px;" class="col-md-6">
-                    <form style="width: 50%; margin-top: 30px; margin-bottom: 30px;">
-                        <div class="form-group pt-2"> <input type="text" class="form-control" placeholder="Name">
-                        </div>
-                        <div class="form-group pl-1"> <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="form-group pl-1"> <input type="intager" class="form-control"
-                                placeholder="Conatact"> </div>
-                        <div class="form-group pl-1"> <textarea type="string" class="form-control"
-                                placeholder="Message" rows="3"></textarea> </div>
-                        <div class="row">
-                            <div class="col-md-3 offset-md-9">
-                                <button class="btn-contact" type="submit">Submit</button>
+                <div class="contact-flex-item contact-right">
+                    <div class="contact-form">
+                        <form>
+                            <div class="contact-input-holder">
+                                <input type="text" class="contact-input-feild" placeholder="Name">
                             </div>
-                        </div>
-                    </form>
+                            <div class="contact-input-holder">
+                                <input type="email" class="contact-input-feild" placeholder="Email">
+                            </div>
+                            <div class="contact-input-holder">
+                                <input type="intager" class="contact-input-feild" placeholder="Conatact">
+                            </div>
+                            <div class="contact-input-holder">
+                                <textarea type="string" class="contact-input-feild" placeholder="Message" rows="3"></textarea>
+                            </div>
+                            <div class="contact-input-holder">
+                                <button class="contact-btn" type="submit">Send a message</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </section>
+
+    <!-- End - CONTACT SECTION -->
+
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"

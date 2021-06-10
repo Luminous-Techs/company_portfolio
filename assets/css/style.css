@@ -7,9 +7,13 @@
 
 /* Begin - Testing Work */
 
-.about, .about-flex-item, .project, .service, .service-container, .service-grid {
+/* .about-flex-item, .service-container, .service-grid, .contact-flex, .contact-flex-item {
   border: 1px dashed #000;
 }
+
+.about, .project, .service, .contact {
+  border: 1px dashed #f00;
+} */
 
 /* End - Testing Work */
 
@@ -132,7 +136,8 @@
 /* Begin - PROJECT SECTION */
 
 .project {
-  padding: 1em;
+  padding: 2em;
+  margin: 4em 0;
 }
 
 .project-flex {
@@ -308,6 +313,105 @@
 }
 
 /* End - SERVICE SECTION */
+
+
+
+
+/* Begin - CONTACT SECTION */
+
+.contact {
+  margin: 2em 0;
+}
+
+.contact-header {
+  margin: 2em 0;
+}
+
+.contact-heading, .contact-sub-heading {
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+.contact-left {
+  width: 25em;
+}
+
+.contact-right {
+  background-color: #8be2f5;
+  width: 25em;
+}
+
+.contact-detail-holder {
+  padding: 1em;
+}
+
+.contact-href {
+  color: #000;
+}
+
+.contact-img {
+  width: 100%;
+}
+
+.contact-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.contact-btn {
+  border: 0;
+  padding: 0.5em 1em;
+  border-radius: 12.5px;
+  background-color: #00f;
+  color: #fff;
+}
+
+.contact-input-holder {
+  padding: 0 2em;
+  margin: 1.5em auto;
+}
+
+.contact-input-feild {
+  width: 100%;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.contact-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.contact-flex-item {
+  box-shadow: -5px 5px 5px #aaa;
+}
+
+@media screen and (min-width: 996px) {
+  .contact-left, .contact-right {
+    width: 30vw;
+  }
+}
+
+@media screen and (max-width: 704px) {
+  .contact-left {
+    margin-top: 2em;
+  }
+  .contact-right {
+    margin: 2em 0;
+  }
+  .contact-flex-item {
+    box-shadow: 0 5px 5px #aaa;
+  }
+}
+
+
+/* End - CONTACT SECTION */
+
+
+
+
 
 
 
