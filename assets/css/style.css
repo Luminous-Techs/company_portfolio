@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 /* @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600"); */
 *{
   margin: 0;
   padding: 0;
 }
-
-
+body{
+    font-family: 'Roboto Slab', serif;
+}
 /* Begin - Testing Work */
 
 /* .about-flex-item, .service-container, .service-grid, .contact-flex, .contact-flex-item {
@@ -100,6 +103,7 @@
 
 .about-sub-heading {
   font-weight: 600;
+  font-size: 18px;
 }
 
 .about-flex {
@@ -153,7 +157,7 @@
 
 .project-img {
   width: 250px;
-  height: 250px;
+  height: 210px;
 }
 
 .project-content {
@@ -162,7 +166,7 @@
 
 .project-span {
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: 600;
   margin-left: 0.2em;
 }
 
@@ -335,9 +339,16 @@
   margin: 2em 0;
 }
 
-.contact-heading, .contact-sub-heading {
+.contact-heading {
   text-align: center;
   margin: 0.5em 0;
+  font-weight: 600;
+  font-size: 36px;
+}
+.contact-sub-heading{  
+    text-align: center;
+    margin: 0.5em 0;
+    font-size: 18px;
 }
 
 .contact-left {
@@ -345,7 +356,7 @@
 }
 
 .contact-right {
-  background-color: #8be2f5;
+  background-color: #90e1f3b2;
   width: 25em;
 }
 
@@ -370,7 +381,7 @@
   border: 0;
   padding: 0.5em 1em;
   border-radius: 12.5px;
-  background-color: #00f;
+  background: linear-gradient(to right, #1EC8EA, #8462EA);
   color: #fff;
 }
 
@@ -393,7 +404,7 @@
 }
 
 .contact-flex-item {
-  box-shadow: -5px 5px 5px #aaa;
+    border-radius: 15px;
 }
 
 @media screen and (min-width: 996px) {
@@ -408,9 +419,6 @@
   }
   .contact-right {
     margin: 2em 0;
-  }
-  .contact-flex-item {
-    box-shadow: 0 5px 5px #aaa;
   }
 }
 
