@@ -10,17 +10,17 @@ body{
 }
 /* Begin - Testing Work */
 
-/* .about-flex-item, .service-container, .service-grid, .contact-flex, .contact-flex-item {
+.container, .about-flex-item, .service-container, .service-grid, .contact-flex, .contact-flex-item {
   border: 1px dashed #000;
 }
 
-.about, .project, .service, .contact, .footer {
+.header, .home, .about, .project, .service, .contact, .footer {
   border: 1px dashed #f00;
 }
 
 .footer-flex, .footer-flex-item {
   border: 1px dashed #fff;
-} */
+}
 
 /* End - Testing Work */
 
@@ -28,7 +28,7 @@ body{
 
 /* Begin - HEADER SECTION */
 
-.header{
+/* .header{
   height: 100%;
 }
 
@@ -58,7 +58,30 @@ body{
   background-size: cover;
   content: "";
   position: relative;
-  height: 100vh;
+  height: 20vh;
+} */
+
+.header {
+  height: 12.5vh;
+}
+
+.company-logo {
+  width: 100px;
+  border: 1px dashed #fff;
+}
+
+.banner {
+  background-image: url("../images/img22.jpeg");
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar-nav li a {
+  color: #fff;
+}
+
+.icon-bar {
+  background-color: #fff;
 }
 
 /* End - HEADER SECTION */
@@ -66,18 +89,34 @@ body{
 
 /* Begin - HOME SECTION */
 
-#home{
-  /* background-color: aqua; */
-  margin-left: 155px;
-  margin: auto 0;
+/* #home{
+  background-color: aqua;
+  height: 80vh;
+  color:#000;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
 }
 #home h1{
-  margin-top:105px;	
-  color:white;
   font-size:4em;
+} */
+
+.home {
+  height: 87.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-#home h2{
-  color: white;
+
+@media screen and (max-width: 458px) {
+  .home {
+    align-items: flex-start;
+  }
 }
 
 /* End - HOME SECTION */
