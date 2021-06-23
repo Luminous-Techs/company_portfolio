@@ -28,45 +28,12 @@ body{
 
 /* Begin - HEADER SECTION */
 
-/* .header{
-  height: 100%;
-}
-
-.logo{
-  height: 150px;
-  padding: 2px 8px;
-}
-.icon-bar{
-  background: white;
-}
-.navbar-right a{
-  font-size: 20px;
-  color: white;
-}
-.navbar-nav a{
-  padding-top: 60px;
-}
-.navbar-nav li:hover{
-  background: white;
-}
-
-#banner{
-  background-color: grey;
-  background-image: url("../images/img22.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  content: "";
-  position: relative;
-  height: 20vh;
-} */
-
 .header {
   height: 12.5vh;
 }
 
 .company-logo {
-  width: 100px;
+  width: 12vh;
   border: 1px dashed #fff;
 }
 
@@ -89,21 +56,6 @@ body{
 
 /* Begin - HOME SECTION */
 
-/* #home{
-  background-color: aqua;
-  height: 80vh;
-  color:#000;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: flex-start;
-}
-#home h1{
-  font-size:4em;
-} */
-
 .home {
   height: 87.5vh;
   display: flex;
@@ -113,10 +65,17 @@ body{
   width: 100%;
 }
 
+/* .home-head {
+  font-size: 6.5vw;
+} */
+
 @media screen and (max-width: 458px) {
   .home {
     align-items: flex-start;
   }
+  /* .home-head {
+    font-size: 8vw;
+  } */
 }
 
 /* End - HOME SECTION */
