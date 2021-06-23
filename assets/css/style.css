@@ -9,7 +9,7 @@ body{
     font-family: 'Roboto Slab', serif;
 }
 /* Begin - Testing Work */
-
+/*
 .container, .about-flex-item, .service-container, .service-grid, .contact-flex, .contact-flex-item {
   border: 1px dashed #000;
 }
@@ -21,7 +21,7 @@ body{
 .footer-flex, .footer-flex-item {
   border: 1px dashed #fff;
 }
-
+*/
 /* End - Testing Work */
 
 
@@ -34,21 +34,21 @@ body{
 
 .company-logo {
   width: 12vh;
-  border: 1px dashed #fff;
+  /*border: 1px dashed #000;*/
 }
 
 .banner {
-  background-image: url("../images/img22.jpeg");
+  background-image: url("../images/background.gif");
   background-color: #000;
-  color: #fff;
+  color: #000;
 }
 
 .navbar-nav li a {
-  color: #fff;
+  color: #000;
 }
 
 .icon-bar {
-  background-color: #fff;
+  background-color: #000;
 }
 
 /* End - HEADER SECTION */
