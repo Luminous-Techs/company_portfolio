@@ -10,17 +10,17 @@ body{
 }
 /* Begin - Testing Work */
 
-/* .about-flex-item, .service-container, .service-grid, .contact-flex, .contact-flex-item {
+.container, .about-flex-item, .service-container, .service-grid, .contact-flex, .contact-flex-item {
   border: 1px dashed #000;
 }
 
-.about, .project, .service, .contact, .footer {
+.header, .home, .about, .project, .service, .contact, .footer {
   border: 1px dashed #f00;
 }
 
 .footer-flex, .footer-flex-item {
   border: 1px dashed #fff;
-} */
+}
 
 /* End - Testing Work */
 
@@ -28,37 +28,27 @@ body{
 
 /* Begin - HEADER SECTION */
 
-.header{
-  height: 100%;
+.header {
+  height: 12.5vh;
 }
 
-.logo{
-  height: 150px;
-  padding: 2px 8px;
-}
-.icon-bar{
-  background: white;
-}
-.navbar-right a{
-  font-size: 20px;
-  color: white;
-}
-.navbar-nav a{
-  padding-top: 60px;
-}
-.navbar-nav li:hover{
-  background: white;
+.company-logo {
+  width: 12vh;
+  border: 1px dashed #fff;
 }
 
-#banner{
-  background-color: grey;
+.banner {
   background-image: url("../images/img22.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  content: "";
-  position: relative;
-  height: 100vh;
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar-nav li a {
+  color: #fff;
+}
+
+.icon-bar {
+  background-color: #fff;
 }
 
 /* End - HEADER SECTION */
@@ -66,18 +56,26 @@ body{
 
 /* Begin - HOME SECTION */
 
-#home{
-  /* background-color: aqua; */
-  margin-left: 155px;
-  margin: auto 0;
+.home {
+  height: 87.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-#home h1{
-  margin-top:105px;	
-  color:white;
-  font-size:4em;
-}
-#home h2{
-  color: white;
+
+/* .home-head {
+  font-size: 6.5vw;
+} */
+
+@media screen and (max-width: 458px) {
+  .home {
+    align-items: flex-start;
+  }
+  /* .home-head {
+    font-size: 8vw;
+  } */
 }
 
 /* End - HOME SECTION */
