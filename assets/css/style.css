@@ -52,9 +52,14 @@ body{
   color: #000;
 }
 
+.navbar-nav {
+  margin: 0 -15px;
+}
+
 .navbar-nav li a {
   color: #000;
   text-align: center;
+  margin-top: 15px;
 }
 
 .icon-bar {
@@ -71,6 +76,18 @@ body{
   
   .navbar-fixed-top.scrolled .nav-link {
     color:#555;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .navbar-nav, .navbar-header {
+    background-color: #edfeff;
+  }
+  .navbar-nav li a {
+    margin: 0;
+  }
+  .navbar-toggle {
+    margin-top: 25px;
   }
 }
 
