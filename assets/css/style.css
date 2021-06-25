@@ -5,6 +5,7 @@
 *{
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 body {
   font-family: 'Roboto Slab', serif;
@@ -45,6 +46,8 @@ body {
 
 .banner {
   background-image: url("../images/background.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #000;
   color: #000;
   height: 100vh;
@@ -77,6 +80,20 @@ body {
 /* Toggle button changed to cross*/
 .icon-bar{
     transition: all 0.2s;
+    transform: rotate(0deg);
+}
+.navbar-toggle.collapsed .icon-top
+{
+    transform: rotate(0deg) !important;
+}
+.navbar-toggle.collapsed .icon-middle
+{
+    visibility: visible;
+    transform: rotate(0deg) !important;
+}
+.navbar-toggle.collapsed .icon-bottom
+{
+    transform: rotate(0deg) !important;
 }
 .navbar-toggle .icon-top
 {
@@ -91,19 +108,6 @@ body {
 .navbar-toggle .icon-middle
 {
     visibility: hidden;  
-}
-.navbar-toggle.collapsed .icon-top
-{
-    transform: rotate(0deg) !important;
-}
-.navbar-toggle.collapsed .icon-middle
-{
-    visibility: visible;
-    transform: rotate(0deg) !important;
-}
-.navbar-toggle.collapsed .icon-bottom
-{
-    transform: rotate(0deg) !important;
 }
 
 @media screen and (max-width: 765px) {
@@ -408,6 +412,12 @@ body {
 
 .contact {
   margin: 2em 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
+  background: url("../images/contact-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contact-header {
