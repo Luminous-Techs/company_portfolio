@@ -74,6 +74,38 @@ body {
   color:#555;
 }
 
+/* Toggle button changed to cross*/
+.icon-bar{
+    transition: all 0.2s;
+}
+.navbar-toggle .icon-top
+{
+    transform: rotate(45deg) !important;
+    transform-origin: 10% 10%;  
+}
+.navbar-toggle .icon-bottom
+{
+    transform: rotate(-45deg) !important;
+    transform-origin: 10% 10%;
+}
+.navbar-toggle .icon-middle
+{
+    visibility: hidden;  
+}
+.navbar-toggle.collapsed .icon-top
+{
+    transform: rotate(0deg) !important;
+}
+.navbar-toggle.collapsed .icon-middle
+{
+    visibility: visible;
+    transform: rotate(0deg) !important;
+}
+.navbar-toggle.collapsed .icon-bottom
+{
+    transform: rotate(0deg) !important;
+}
+
 @media screen and (max-width: 765px) {
   .navbar-nav, .navbar-header {
     background-color: #fff;
@@ -85,8 +117,6 @@ body {
     margin-top: 2.2vh;
   }
 }
-
-
 
 /* End - HEADER SECTION */
 
@@ -118,6 +148,10 @@ body {
   }
   .home-head-one {
     font-size: 3.5em;
+    margin-left: 10px;
+  }
+  .home-head-two {
+    margin-left: 10px;
   }
 }
 
