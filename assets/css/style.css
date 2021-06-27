@@ -301,11 +301,23 @@ body {
   row-gap: 20px;
   column-gap: 20px;
   place-items: center;
+  
 }
 
 .service-grid-item {
   max-width: 16em;
   padding: 0.7em;
+  box-sizing: border-box;
+  border: #000 solid 2px;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  
+  box-shadow:         3px 3px 5px 6px #ccc; 
+  border-radius: 20px; 
+  transition: transform .2s;
+  /* margin-top: 30px; */
+}
+
+.service-grid-item:hover{
+  transform: scale(1.1);
 }
 
 .service-icon {
