@@ -45,7 +45,7 @@ body {
 }
 
 .banner {
-  background-image: url("../images/bg2.gif");
+  background-image: url("../images/background.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000;
@@ -78,7 +78,7 @@ body {
 }
 
 /* Toggle button changed to cross*/
-.icon-bar{
+/* .icon-bar{
     transition: all 0.2s;
     transform: rotate(0deg);
 }
@@ -108,7 +108,7 @@ body {
 .navbar-toggle .icon-middle
 {
     visibility: hidden;  
-}
+} */
 
 @media screen and (max-width: 765px) {
   .navbar-nav, .navbar-header {
@@ -167,6 +167,7 @@ body {
 .about-img {
   width: 40vw;
   height: auto;
+  margin-top: 10px;
   margin: 0 auto;
 }
 
@@ -311,7 +312,7 @@ body {
   /* border: #000 solid 2px; */
   -webkit-box-shadow: 3px 3px 4px 3px #ccc;  
   box-shadow:         3px 3px 4px 3px #ccc; 
-  border-radius: 20px; 
+  border-radius: 20px;
   transition: transform .3s;
   /* margin-top: 30px; */
 }
@@ -321,9 +322,7 @@ body {
 }
 
 .service-icon {
-  color: black;
-  width: 25px;
-  height: 25px;
+    margin-left: 46px;
 }
 
 .service-name {
@@ -397,6 +396,10 @@ body {
   .service-vertical-line {
     width: 70%;
   }
+  .service-icon{
+      margin-left: 50px;
+      margin-top: 15px;
+  }
 }
 
 @media screen and (max-width: 507px) {
@@ -413,6 +416,9 @@ body {
   }
   .service-description {
     margin: 1em;
+  }
+  .service-icon{
+      margin-left: 50px;
   }
 }
 
