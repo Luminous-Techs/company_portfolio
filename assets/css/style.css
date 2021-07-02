@@ -45,7 +45,7 @@ body {
 }
 
 .banner {
-  background-image: url("../images/background.gif");
+  background-image: url("../images/bg2.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000;
@@ -97,12 +97,12 @@ body {
 }
 .navbar-toggle .icon-top
 {
-    transform: rotate(45deg) !important;
+    transform: rotate(45deg);
     transform-origin: 10% 10%;  
 }
 .navbar-toggle .icon-bottom
 {
-    transform: rotate(-45deg) !important;
+    transform: rotate(-45deg);
     transform-origin: 10% 10%;
 }
 .navbar-toggle .icon-middle
@@ -308,16 +308,16 @@ body {
   max-width: 16em;
   padding: 0.7em;
   box-sizing: border-box;
-  border: #000 solid 2px;
-  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  
-  box-shadow:         3px 3px 5px 6px #ccc; 
+  /* border: #000 solid 2px; */
+  -webkit-box-shadow: 3px 3px 4px 3px #ccc;  
+  box-shadow:         3px 3px 4px 3px #ccc; 
   border-radius: 20px; 
-  transition: transform .2s;
+  transition: transform .3s;
   /* margin-top: 30px; */
 }
 
 .service-grid-item:hover{
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .service-icon {
@@ -343,6 +343,7 @@ body {
   background-color: #fff;
   text-decoration: underline;
   margin: 0 auto;
+  margin-bottom: 10px;
   display: block;
 }
 
@@ -453,7 +454,7 @@ body {
 }
 
 .contact-right {
-  background-color: #90e1f3b2;
+  background-color: #90e1f35e;
   width: 25em;
 }
 
